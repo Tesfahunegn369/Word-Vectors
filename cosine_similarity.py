@@ -1,6 +1,4 @@
 import numpy as np
-
-# Q1: Implement cosine similarity function (10 pts)
 def cosine_similarity(A, B):
     '''
     Input:
@@ -9,20 +7,15 @@ def cosine_similarity(A, B):
     Output:
         cos: numerical number representing the cosine similarity between A and B.
     '''
-
-    ### START CODE HERE (REPLACE INSTANCES OF 'None' with your code) ###
-
     dot = np.dot(A, B)
     norma = np.linalg.norm(A)
     normb = np.linalg.norm(B)
     cos = dot / (norma * normb)
-
-    ### END CODE HERE ###
     return cos
 
 def cosine_similarity_test(word_embeddings):
     # Testing your function
-    print("Q1: Implement cosine similarity function (10 pts)")
+    print("Implement cosine similarity function")
     if cosine_similarity(np.array([1, 0]), np.array([0, 1])) == 0.0:
         print('SUCCESS')
     else:

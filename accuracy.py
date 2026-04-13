@@ -1,5 +1,4 @@
 
-# Q5: Implement accuracy function (50 pts)
 def get_accuracy(prediction, data):
     '''
     Input:
@@ -9,8 +8,6 @@ def get_accuracy(prediction, data):
     Output:
         accuracy: the accuracy of the model
     '''
-
-    ### START CODE HERE (REPLACE INSTANCES OF 'None' with your code) ###
     # initialize num correct to zero
     num_correct = 0
 
@@ -29,13 +26,11 @@ def get_accuracy(prediction, data):
 
     # calculate the accuracy by dividing the number correct by m
     accuracy = num_correct / m
-
-    ### END CODE HERE ###
     return accuracy
 
 def accuracy_test(prediction, data_Y):
     # Testing your function
-    print("Q4-5: Implement predict and accuracy function (50 pts)")
+    print("Implement predict and accuracy function")
     accuracy = get_accuracy(prediction, data_Y)
     print(f"Accuracy is {accuracy:.2f}")
 

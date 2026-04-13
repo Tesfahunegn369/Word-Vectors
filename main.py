@@ -21,8 +21,8 @@ print(word_embeddings.keys())  # there are 243 words that will be used in this a
 
 print(f"Dimension: {word_embeddings['Spain'].shape[0]}\n")
 
-cosine_similarity_test(word_embeddings) ## Q1
-euclidean_distance_test(word_embeddings) ## Q2
+cosine_similarity_test(word_embeddings) 
+euclidean_distance_test(word_embeddings) 
 
 # feel free to try different words
 word1 = 'gas'
@@ -31,13 +31,13 @@ word2 = 'oil'
 print(f"Cosine similarity between {word1} and {word2}: {cosine_similarity(word_embeddings[word1], word_embeddings[word2])}")
 print(f"Euclidean distance between {word1} and {word2}: {euclidean(word_embeddings[word1], word_embeddings[word2])}\n")
 
-get_country_test(word_embeddings) ## Q3
+get_country_test(word_embeddings)
 
-prediction = predict(word_embeddings, data_X) ## Q4
+prediction = predict(word_embeddings, data_X)
 data_X['predicted_country2'] = prediction
 print(data_X[['city2', 'predicted_country2']])
 
-accuracy_test(prediction, data_Y) ## Q5
+accuracy_test(prediction, data_Y)
 
 print("Congratulations! You have completed all tasks.\n")
 

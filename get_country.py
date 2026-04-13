@@ -1,7 +1,5 @@
 from cosine_similarity import *
 from euclidean_distance import *
-
-# Q3: Implement get_country function (30 pts)
 def get_country(city1, country1, city2, word_embeddings):
     """
     Input:
@@ -12,8 +10,6 @@ def get_country(city1, country1, city2, word_embeddings):
     Output:
         countries: a dictionary with the most likely country and its similarity score
     """
-    ### START CODE HERE (REPLACE INSTANCES OF 'None' with your code) ###
-
     # store the city1, country 1, and city 2 in a set called group
     group = {city1, country1, city2}
 
@@ -57,13 +53,11 @@ def get_country(city1, country1, city2, word_embeddings):
                 # store the country as a tuple, which contains the word and the similarity
                 country = (word, similarity)
 
-    ### END CODE HERE ###
-
     return country
 
 def get_country_test(word_embeddings):
     # Testing your function
-    print("Q3: Implement get_country function (30 pts)")
+    print("Implement get_country function")
 
     country_cairo = get_country('Athens', 'Greece', 'Cairo', word_embeddings)
     if country_cairo[0] == 'Egypt' and abs(country_cairo[1] - 0.7626) < 0.001:

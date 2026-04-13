@@ -1,6 +1,4 @@
 from get_country import *
-
-# Q4: Implement predict function
 def predict(word_embeddings, data):
     '''
     Input:
@@ -10,9 +8,6 @@ def predict(word_embeddings, data):
     Output:
         prediction: list of the predicted country
     '''
-
-    ### START CODE HERE (REPLACE INSTANCES OF 'None' with your code) ###
-
     # initialize predictions to empty list
     prediction = []
 
@@ -34,6 +29,4 @@ def predict(word_embeddings, data):
         # append the predicted country to the prediction list
         prediction.append(predicted_country2)
 
-
-    ### END CODE HERE ###
     return prediction
